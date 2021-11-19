@@ -1,0 +1,23 @@
+{
+  "name": "fake-data-generator-service",
+  "version": "1.0.0",
+  "description": "Fake Data Generator Service",
+  "main": "generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fake",
+    "data",
+    "generator",
+    "service",
+    "nodejs"
+  ],
+  "author": "Cenk Camkıran",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "cron": "^1.8.2",
+    "faker": "^5.5.3"
+  }
+}
