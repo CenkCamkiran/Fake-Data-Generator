@@ -14,7 +14,10 @@ const job = new CronJob("0 */2 * * * *", function () {
     .then(function (ch) {
       return ch.assertQueue(queue).then(function (ok) {
         console.log(ok);
-        return ch.sendToQueue(queue, Buffer.from(randomEmail));
+        return ch.sendToQueue(
+          queue,
+          Buffer.from(JSON.stringify({ email: randomEmail }))
+        );
       });
     })
     .catch(console.warn);
